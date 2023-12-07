@@ -72,7 +72,7 @@ const HeroArea = () => {
                   <a className="tp-btn-lg" onClick={scrollToDemo} style={{ cursor: 'pointer' }}>See All Demo</a>
                 </div>
                 <div className="tp-hero-text tp-char-animation-2">
-                  <p>Resume / Modern CV & Personal Portfolio <br /> Grid Based HTML Template</p>
+                  <p>Resume / Modern CV & Personal Portfolio <br /> Grid Based Next js Template</p>
                 </div>
               </div>
             </div>
