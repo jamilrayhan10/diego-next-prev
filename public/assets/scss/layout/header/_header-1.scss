@@ -1,0 +1,78 @@
+@use '../../utils' as *;
+/*----------------------------------------*/
+/*  3.1 Header Style 1
+/*----------------------------------------*/
+
+.tp-transparent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.tp-header{
+    &-logo{
+        & img{
+            width: 130px;
+            height: 100%;
+        }
+    }
+    &-plr{
+        padding: 0px 90px;
+        @media #{$lg,$md}{
+            padding: 0;
+        }
+        @media #{$xs}{
+            padding: 20px 0;
+        }
+    }
+    &-menu{
+        & nav{
+            & ul{
+                margin-left: 90px;
+                @media #{$md}{
+                    margin-left: 0;
+                }
+                & li{
+                    list-style-type: none;
+                    display: inline-block;
+                    margin: 0px 17px;
+                    @media #{$md}{
+                        margin: 0px 6px;
+                    }
+                    & a{
+                        font-size: 16px;
+                        font-weight: 500;
+                        padding: 27px 0;
+                        display: inline-block;
+                        color: rgba(255, 255, 255, 0.90);
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            bottom: 26px;
+                            left: 50%;
+                            height: 1.5px;
+                            width: 0;
+                            content: '';
+                            transform: translateX(-50%);
+                            background-color: var(--tp-common-white);
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: .4s;
+                        }
+                    }
+                    &:hover{
+                        & a{
+                            color: var(--tp-common-white);
+                            &::after{
+                                opacity: 1;
+                                visibility: visible;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
