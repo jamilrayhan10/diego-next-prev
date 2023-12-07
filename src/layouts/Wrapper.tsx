@@ -27,8 +27,9 @@ if (typeof window !== "undefined") {
 }
 
 const Wrapper = ({ children }: any) => {
+  
   const pathname = usePathname();
- 
+
   useEffect(() => {
     // animation
     const timer = setTimeout(() => {
@@ -37,8 +38,6 @@ const Wrapper = ({ children }: any) => {
 
     return () => clearTimeout(timer);
   }, []);
-
-
 
   useEffect(() => {
     if (typeof window !== "undefined") {
