@@ -48,7 +48,7 @@ const Footer = () => {
                 <div className="row">
                   <div className="col-xl-6 col-lg-6 col-md-7">
                     <div className="tp-copyright-left text-md-start text-center">
-                      <span>© 2023. All rights reserved by <a href="https://themeforest.net/user/theme_pure" target="_blank">ThemePure</a></span>
+                      <span>© {new Date().getFullYear()}. All rights reserved by <a href="https://themeforest.net/user/theme_pure" target="_blank">ThemePure</a></span>
                     </div>
                   </div>
                   <div className="col-xl-6 col-lg-6 col-md-5">
